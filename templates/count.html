@@ -8,7 +8,8 @@
     <a href="{% url 'home' %}">Home</a>
     <h1>There are {{ count }} words in your text</h1>
     {{ fulltext }}
-    {% for word, counttotal in sorted_words %}
+    <hr>
+    {% for word, counttotal in worddictionary %}
     {{ word }} - {{ counttotal }}
     <hr>
     {% endfor %}
