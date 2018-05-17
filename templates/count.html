@@ -9,7 +9,7 @@
     <h1>There are {{ count }} words in your text</h1>
     {{ fulltext }}
     <hr>
-    {% for word, counttotal in worddictionary %}
+    {% for word, counttotal in sorted_words %}
     {{ word }} - {{ counttotal }}
     <hr>
     {% endfor %}
